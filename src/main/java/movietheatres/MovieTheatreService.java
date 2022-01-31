@@ -40,6 +40,18 @@ public class MovieTheatreService {
 
     }
 
+    public List<String> findMovie(String title) {
+        List<String> places = new ArrayList<>();
+        for (Map.Entry<String, List<Movie>> entry : movies.entrySet()) {
+            for (Movie movie : entry.getValue()) {
+                if (movie.getTitle().equals(title) && (!places.contains(title))) {
+                    places.add(entry.getKey());
+                }
+            }
+        }
+        return places;
+    }
+
     public static void main(String[] args) {
         MovieTheatreService mts = new MovieTheatreService();
         Path path = Paths.get("src/test/resources/moviesintheaters.txt");

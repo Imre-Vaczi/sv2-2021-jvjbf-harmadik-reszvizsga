@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class MovieTheatreServiceTest {
 
-  /*  MovieTheatreService mvs;
+    MovieTheatreService mvs;
 
     @BeforeEach
     void init() {
@@ -23,7 +23,7 @@ public class MovieTheatreServiceTest {
     }
 
 
-    @Test
+   /* @Test
     void testReadFromFile() {
 
         assertEquals(3, mvs.getShows().keySet().size());
@@ -46,6 +46,5 @@ public class MovieTheatreServiceTest {
     @Test
     void testFindLatestShowWithWrongName(){
         assertThrows(IllegalArgumentException.class,()->mvs.findLatestShow("Indiana Jones"));
-    }
-*/
+    }*/
 }

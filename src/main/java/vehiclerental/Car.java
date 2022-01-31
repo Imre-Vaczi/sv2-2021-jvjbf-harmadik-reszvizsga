@@ -3,10 +3,10 @@ package vehiclerental;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
-/*public class Car implements Rentable{*/
+public class Car implements Rentable{
 
-/*    private String id;
-    private LocalDateTime rentingTime;
+    private String id;
+    private LocalTime rentingTime;
     private int price;
 
     public Car(String id, int price) {
@@ -22,16 +22,16 @@ import java.time.LocalTime;
 
     @Override
     public LocalTime getRentingTime() {
-        return LocalDateTime.now().minus(this.rentingTime);
+        return rentingTime;
     }
 
     @Override
     public void rent(LocalTime time) {
-
+        rentingTime = time;
     }
 
     @Override
     public void closeRent() {
         rentingTime = null;
-    }*/
-/*}*/
+    }
+}

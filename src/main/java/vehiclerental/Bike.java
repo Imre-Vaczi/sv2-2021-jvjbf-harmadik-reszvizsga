@@ -4,10 +4,10 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
-/*public class Bike implements Rentable{
+public class Bike implements Rentable{
 
     private String id;
-    private LocalDateTime rentingTime;
+    private LocalTime rentingTime;
     private static final int PRICE = 15;
 
     public Bike(String id) {
@@ -26,11 +26,11 @@ import java.time.LocalTime;
 
     @Override
     public void rent(LocalTime time) {
-        rentingTime =
+        rentingTime = time;
     }
 
     @Override
     public void closeRent() {
         rentingTime = null;
     }
-}*/
+}
